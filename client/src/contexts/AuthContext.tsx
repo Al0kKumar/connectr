@@ -32,7 +32,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check for user in localStorage
     const storedUser = localStorage.getItem("buddy_user");
     if (storedUser) {
       setUser(JSON.parse(storedUser));
