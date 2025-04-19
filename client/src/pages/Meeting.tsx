@@ -217,7 +217,7 @@ const Meeting = () => {
         <Sheet open={isSidebarOpen} onOpenChange={setIsSidebarOpen}>
           <SheetContent className="w-[320px] sm:w-[400px]">
             <SheetHeader>
-              <SheetTitle>Meeting Details</SheetTitle>
+              <SheetTitle>Meeting Detail's</SheetTitle>
             </SheetHeader>
             
             <Tabs 
@@ -242,8 +242,8 @@ const Meeting = () => {
                     {messages.length === 0 ? (
                       <div className="text-center text-muted-foreground py-8">
                         <MessageSquare className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                        <p>No messages yet</p>
-                        <p className="text-sm">Be the first to send a message!</p>
+                        <p>No messages yet !</p>
+                        <p className="text-sm">Be the first to send a message !</p>
                       </div>
                     ) : (
                       <div className="space-y-4">
@@ -388,7 +388,7 @@ const Meeting = () => {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Settings className="h-4 w-4 mr-2" />
-                Settings
+                Setting's
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
