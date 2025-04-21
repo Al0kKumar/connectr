@@ -12,10 +12,10 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Loader2 } from "lucide-react";
 
 const signupSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
-  password: z.string().min(6, { message: "Password must be at least 6 characters" }),
-  confirmPassword: z.string().min(6, { message: "Confirm password is required" }),
+  name: z.string().min(2, { message: "Name must be at least 2 character" }),
+  email: z.string().email({ message: "Please enter valid email address" }),
+  password: z.string().min(6, { message: "Password must be at-least 6 characters" }),
+  confirmPassword: z.string().min(6, { message: "Confirm password  required" }),
 }).refine((data) => data.password === data.confirmPassword, {
   message: "Passwords do not match",
   path: ["confirmPassword"],
