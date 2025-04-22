@@ -37,7 +37,7 @@ const Login = () => {
       await login(values.email, values.password);
       navigate("/dashboard");
     } catch (error) {
-      console.error("Login error:", error);
+      console.error("Login-error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -46,10 +46,10 @@ const Login = () => {
   return (
     <AuthLayout
       title="Log In"
-      description="Welcome back to Buddy"
+      description="Welcome back to Buddy !"
       footer={
         <div className="w-full text-center text-sm">
-          Don't have an account?{" "}
+          Don't have an account ?{" "}
           <Link to="/signup" className="text-primary hover:underline">
             Sign up
           </Link>
