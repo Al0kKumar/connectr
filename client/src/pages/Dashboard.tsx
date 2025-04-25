@@ -218,7 +218,7 @@ const Dashboard = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">My Contacts</h3>
-                      <p className="text-sm text-muted-foreground">Manage your contacts</p>
+                      <p className="text-sm text-muted-foreground">Manage your Contacts</p>
                     </div>
                   </div>
                   <ArrowRight className="h-5 w-5 text-muted-foreground" />
@@ -250,22 +250,22 @@ const Dashboard = () => {
       <Dialog open={newMeetingDialogOpen} onOpenChange={setNewMeetingDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Create New Meeting</DialogTitle>
+            <DialogTitle>Create New Meeting.</DialogTitle>
             <DialogDescription>
-              Start a new video meeting instantly or schedule for later
+              Start a new video meeting instantly or schedule for later.
             </DialogDescription>
           </DialogHeader>
           
           <div className="grid gap-4 py-4">
             <div className="grid gap-2">
               <Button onClick={handleNewMeeting}>
-                <Video className="mr-2 h-4 w-4" /> Start instant meeting
+                <Video className="mr-2 h-4 w-4" /> Start instant meeting.
               </Button>
             </div>
             <Separator />
             <div className="grid gap-2">
               <Button variant="outline" disabled>
-                <CalendarClock className="mr-2 h-4 w-4" /> Schedule for later
+                <CalendarClock className="mr-2 h-4 w-4" /> Schedule for later.
                 <span className="ml-1 text-xs">(Coming soon)</span>
               </Button>
             </div>
@@ -279,7 +279,7 @@ const Dashboard = () => {
           <DialogHeader>
             <DialogTitle>Join a Meeting</DialogTitle>
             <DialogDescription>
-              Enter the meeting code to join an existing meeting
+              Enter the meeting code to join an existing meeting.
             </DialogDescription>
           </DialogHeader>
           
