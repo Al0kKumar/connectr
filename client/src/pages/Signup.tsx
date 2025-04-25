@@ -56,7 +56,7 @@ const Signup = () => {
       description="Create an account to get started with Buddy"
       footer={
         <div className="w-full text-center text-sm">
-          Already have an account?{" "}
+          Already have an account ?{" "}
           <Link to="/login" className="text-primary hover:underline">
             Log in
           </Link>
@@ -72,7 +72,7 @@ const Signup = () => {
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input placeholder="John David" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -114,7 +114,7 @@ const Signup = () => {
               <FormItem>
                 <FormLabel>Confirm Password</FormLabel>
                 <FormControl>
-                  <Input type="password" placeholder="••••••••" {...field} />
+                  <Input type="password" placeholder="••••••" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -125,7 +125,7 @@ const Signup = () => {
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Creating account...
+                Creating account....
               </>
             ) : (
               "Create Account"
